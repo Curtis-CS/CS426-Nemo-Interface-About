@@ -527,14 +527,14 @@ a.text-black:focus,
 a.text-black.active {
   color: #232323 !important;
 }
-a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]) {
-  position: relative;
-  background-image: transparent;
-  background-size: 10000px 2px;
-  background-repeat: no-repeat;
-  background-position: 0px 1.2em;
-  background-position: -10000px 1.2em;
-}
+/*a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]) {*/
+/*  position: relative;*/
+/*  background-image: transparent;*/
+/*  background-size: 10000px 2px;*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: 0px 1.2em;*/
+/*  background-position: -10000px 1.2em;*/
+/*}*/
 a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):hover {
   transition: background-position 2s ease-in-out;
   background-image: linear-gradient(currentColor 50%, currentColor 50%);
@@ -617,15 +617,15 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
   border-color: #082c4e !important;
 }
-.form-control:-webkit-input-placeholder {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.3;
-  font-weight: 400;
-}
-.form-control:-webkit-input-placeholder > .mbr-iconfont {
-  font-size: 1.375rem;
-}
+/*.form-control:-webkit-input-placeholder {*/
+/*  font-family: 'DM Sans', sans-serif;*/
+/*  font-size: 1.1rem;*/
+/*  line-height: 1.3;*/
+/*  font-weight: 400;*/
+/*}*/
+/*.form-control:-webkit-input-placeholder > .mbr-iconfont {*/
+/*  font-size: 1.375rem;*/
+/*}*/
 blockquote {
   border-color: #082c4e;
 }
@@ -697,12 +697,11 @@ iframe.lazy-placeholder,
   position: absolute;
   width: 200px;
   height: 200px;
-  background: transparent no-repeat center;
   background-size: contain;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' stroke='%23082c4e' %3e%3cg fill='none' fill-rule='evenodd'%3e%3cg transform='translate(16 16)' stroke-width='2'%3e%3ccircle stroke-opacity='.5' cx='16' cy='16' r='16'/%3e%3cpath d='M32 16c0-9.94-8.06-16-16-16'%3e%3canimateTransform attributeName='transform' type='rotate' from='0 16 16' to='360 16 16' dur='1s' repeatCount='indefinite'/%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
+  background: transparent url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' stroke='%23082c4e' %3e%3cg fill='none' fill-rule='evenodd'%3e%3cg transform='translate(16 16)' stroke-width='2'%3e%3ccircle stroke-opacity='.5' cx='16' cy='16' r='16'/%3e%3cpath d='M32 16c0-9.94-8.06-16-16-16'%3e%3canimateTransform attributeName='transform' type='rotate' from='0 16 16' to='360 16 16' dur='1s' repeatCount='indefinite'/%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e") no-repeat center;
 }
 section.lazy-placeholder:after {
   opacity: 0.5;
@@ -873,10 +872,7 @@ a {
   text-align: center;
 }
 .cid-sg6Qxr58rM .navbar.collapsed .icons-menu {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
 }
 @media (max-width: 991px) {
   .cid-sg6Qxr58rM .navbar .nav-item .nav-link::before {
@@ -1168,11 +1164,10 @@ a {
   color: #082c4e;
   position: relative;
   z-index: 1;
-  margin: auto;
   transition: all 0.4s;
   width: fit-content;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin: auto auto 3rem;
   background: #fafafa;
   padding: 1rem;
   border-radius: 50%;
@@ -1200,13 +1195,11 @@ a {
 .cid-sg6RC57Hwh .card-wrapper {
   border-radius: 4px;
   overflow: visible;
-  padding: 0 1rem;
-  padding-bottom: 3rem;
+  padding: 0 1rem 3rem;
 }
 @media (min-width: 992px) {
   .cid-sg6RC57Hwh .text-box {
-    padding: 2rem;
-    padding-right: 4rem;
+    padding: 2rem 4rem 2rem 2rem;
   }
 }
 @media (max-width: 991px) {
@@ -1292,8 +1285,7 @@ a {
 }
 @media (min-width: 992px) {
   .cid-sg6ThUlv3V .text-box {
-    padding: 2rem;
-    padding-right: 4rem;
+    padding: 2rem 4rem 2rem 2rem;
   }
 }
 @media (max-width: 991px) {
